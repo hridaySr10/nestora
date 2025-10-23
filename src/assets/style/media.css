@@ -1,0 +1,315 @@
+@media screen and (max-width: 1326px) {
+  .about-box {
+    grid-template-columns: 400px 1fr 0.7fr;
+    gap: 18px;
+  }
+  .project-inner-box .card {
+    padding: 1.2rem;
+    grid-template-rows: 300px auto;
+  }
+}
+@media screen and (max-width: 1103px) {
+  .header-box {
+    grid-template-columns: 150px auto 150px;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .about-box {
+    grid-template-columns: 320px 1fr 0.7fr;
+    gap: 16px;
+  }
+  .projects-show-box {
+    padding: 0;
+  }
+  .project-inner-box {
+    gap: 1rem;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
+  .project-inner-box .card {
+    padding: 1.2rem;
+    grid-template-rows: auto;
+  }
+  .project-inner-box .card .img-box {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 1058px) {
+  .hero-text .text-1 {
+    left: -55px;
+  }
+  .hero-text .text-2 {
+    right: -10px;
+  }
+  .section-hero .btm-text {
+    width: 90%;
+  }
+  .left.direct-links {
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+  }
+  .left.direct-links .box {
+    width: 150px;
+  }
+  .right.news-letter {
+    width: 100%;
+    padding-left: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1013px) {
+  .header-box {
+    grid-template-columns: 150px auto;
+  }
+  .header-btn a {
+    display: none !important;
+  }
+  .hamburger {
+    display: flex !important;
+  }
+  .nav-main {
+    display: none;
+  }
+  .hero-text .text-1 {
+    left: 0;
+  }
+  .hero-text .text-2 {
+    right: 0;
+  }
+  .hero-text .text h1 {
+    font-size: clamp(3rem, 7vw, 4rem);
+  }
+  .section-hero .btm-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    & p {
+      font-size: clamp(14px, 3vw, 16px);
+      text-align: center;
+      width: 650px;
+    }
+    .hero-btn {
+      justify-content: center;
+      margin-top: clamp(16px, 2vw, 18px);
+    }
+  }
+  .hero-image .img-box {
+    height: 70vh;
+  }
+  .hero-image {
+    height: 70vh;
+  }
+  .hero-fixed-img::after {
+    background: linear-gradient(
+      180deg,
+      rgba(12, 12, 12, 0) 0%,
+      rgba(12, 12, 12, 0.9) 70%,
+      rgba(12, 12, 12, 1) 100%
+    );
+  }
+  .hero-fixed-img .overlay .text {
+    top: 60%;
+    left: 0%;
+  }
+
+  .about-box {
+    grid-template-columns: 350px 1fr;
+    gap: 32px;
+  }
+  .about-box .mdl-img {
+    height: 500px;
+  }
+  .about-side-extra-info-cards {
+    display: none !important;
+  }
+  .section-trust .section-heading {
+    max-width: 500px;
+  }
+  .section-trust .desc {
+    max-width: 200px;
+  }
+  .section-trust .trust-num-grid-box {
+    gap: 24px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .recent-project-box .heading-box {
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+  }
+  .projects-show-box h5 {
+    margin-block: 12px;
+  }
+  .splide__slide .user-msg-box {
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    padding: 24px;
+  }
+  .mob-user-image {
+    display: block;
+  }
+  .user-msg-box {
+    gap: 18px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .project-inner-box {
+    gap: 1rem;
+    grid-template-columns: 500px;
+    grid-template-rows: auto;
+    justify-content: center;
+  }
+  .section-trust .section-heading {
+    max-width: 100%;
+  }
+  .section-trust .desc {
+    display: none !important;
+  }
+  .section-trust .trust-grid-box {
+    gap: 40px;
+  }
+  .section-trust .trust-num-grid-box {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+  }
+  .section-trust .trust-number .num,
+  .section-trust .trust-number span {
+    font-size: clamp(2.2rem, 6vw, 3rem);
+  }
+}
+@media screen and (max-width: 733px) {
+  .about-box {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 32px;
+    justify-content: center;
+  }
+  .about-box .mdl-img {
+    width: 100%;
+    /* height: 500px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-box .mdl-img img {
+    width: 0;
+    height: 100%;
+    transition: width 1s ease;
+    -webkit-transition: width 1s ease;
+    -moz-transition: width 1s ease;
+    -ms-transition: width 1s ease;
+    -o-transition: width 1s ease;
+  }
+
+  .about-box .mdl-img img.revealed {
+    width: 100%;
+    height: 100%;
+  }
+  .left.direct-links {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 667px) {
+  .hero-text {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .section-hero .btm-text p {
+    width: 100%;
+  }
+  .hero-text .text h1 {
+    text-align: center;
+    font-size: clamp(2rem, 7vw, 4rem);
+  }
+  .section-recent-projects .filter-btns {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+}
+@media screen and (max-width: 640px) {
+  .blog-splide .splide__slide {
+    width: 100%;
+    padding: max(1.1rem, 5vw);
+  }
+  .blog-splide .blog-card {
+    width: 100%;
+  }
+  .blog-grid-box {
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 588px) {
+  .project-inner-box {
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 588px) {
+  .hero-fixed-img .overlay .text {
+    top: 50%;
+    left: 0%;
+  }
+}
+@media screen and (max-width: 568px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .right.news-letter {
+    padding-left: 0;
+  }
+  .left.direct-links {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 520px) {
+  .section-trust .trust-num-grid-box {
+    grid-template-columns: 1fr;
+  }
+  .trust-num-grid-box .box {
+    gap: 2rem;
+    height: auto;
+  }
+}
+@media screen and (max-width: 407px) {
+  .hero-image .img-box {
+    height: 50vh;
+    /* width: 90% !important; */
+  }
+  .hero-image {
+    height: 50vh;
+  }
+  .section-recent-projects .info-top {
+    flex-direction: column;
+  }
+  .testimonial-splide .splide__slide {
+    max-width: 100% !important;
+  }
+}
+@media screen and (max-width: 340px) {
+  .user-msg-box .user-name {
+    flex-direction: column-reverse;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+  }
+}
+/***** Section *****/ /***** End Section *****/
+
+@media screen and (min-width: 1920px) {
+  .hero-image {
+    height: 150vh;
+  }
+  .project-inner-box .card {
+    grid-template-rows: 500px 250px;
+  }
+}
