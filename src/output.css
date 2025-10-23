@@ -291,6 +291,9 @@
   .inline-block {
     display: inline-block;
   }
+  .table {
+    display: table;
+  }
   .h-\[50px\] {
     height: 50px;
   }
@@ -393,8 +396,17 @@
   .max-w-\[1536px\] {
     max-width: 1536px;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .transform {
+    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .resize {
+    resize: both;
   }
   .\[grid-template-columns\:repeat\(2\,minmax\(400px\,1fr\)\)\] {
     grid-template-columns: repeat(2,minmax(400px,1fr));
@@ -483,6 +495,10 @@
   .rounded-\[50\%\] {
     border-radius: 50%;
   }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .border-1 {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -520,6 +536,15 @@
   }
   .bg-white {
     background-color: var(--color-white);
+  }
+  .bg-\[url\(\/assets\/images\/hero\/img-1\.webp\)\] {
+    background-image: url(/assets/images/hero/img-1.webp);
+  }
+  .bg-\[url\(\/assets\/images\/hero\/img-2\.webp\)\] {
+    background-image: url(/assets/images/hero/img-2.webp);
+  }
+  .bg-\[url\(\/assets\/images\/hero\/img-3\.webp\)\] {
+    background-image: url(/assets/images/hero/img-3.webp);
   }
   .bg-\[url\(\/src\/assets\/images\/hero\/img-1\.webp\)\] {
     background-image: url(/src/assets/images/hero/img-1.webp);
@@ -661,6 +686,9 @@
   .text-nowrap {
     text-wrap: nowrap;
   }
+  .text-wrap {
+    text-wrap: wrap;
+  }
   .\!text-\[\#aaa\] {
     color: #aaa !important;
   }
@@ -676,8 +704,15 @@
   .uppercase {
     text-transform: uppercase;
   }
+  .underline {
+    text-decoration-line: underline;
+  }
   .decoration-0 {
     text-decoration-thickness: 0px;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
@@ -1213,6 +1248,26 @@ p {
   border: none;
   outline: none;
 }
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
@@ -1225,6 +1280,11 @@ p {
 @property --tw-tracking {
   syntax: "*";
   inherits: false;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
 }
 @property --tw-blur {
   syntax: "*";
@@ -1286,9 +1346,15 @@ p {
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
       --tw-border-style: solid;
       --tw-font-weight: initial;
       --tw-tracking: initial;
+      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
